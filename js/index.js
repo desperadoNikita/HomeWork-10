@@ -14,7 +14,7 @@ const user = {
 };
 function hello (user) {
     const  {firstName, lastName, age, height, weight, hobby, location: {country, city}} = user;
-    console.log("Вітаю Nikita Khaitul, ваш вік 15, ваш ріст 170, ваша вага 64, ваше хоббі programming, ваша локація: Ukraine, Kyiv.");
+    console.log(`Вітаю ${firstName} ${lastName}, ваш вік ${age}, ваш ріст ${170}, ваша вага ${weight}, ваше хоббі ${hobby}, ваша локація: ${country}, ${city}.`);
 }
 
 hello(user);
